@@ -64,7 +64,7 @@
               >About</a
             >
             <a
-              href="#"
+              href="#favouriteprojects"
               @click="whichPage('FavouriteProjects')"
               :class="{
                 active: isFavouriteProjectsActive,

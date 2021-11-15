@@ -677,7 +677,6 @@ export default {
       x: 1200,
       ease: "none",
       duration: 10,
-      rotation: 360,
     });
   },
 };

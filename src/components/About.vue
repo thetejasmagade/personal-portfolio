@@ -1,6 +1,9 @@
 <template>
   <div class="container px-28 py-28 bg-gray-200 is-hidden-mobile">
-    <h2 class="text-7xl pb-2" style="font-family: 'Inter', sans-serif">
+    <h2
+      class="text-7xl pb-2 about-text"
+      style="font-family: 'Inter', sans-serif"
+    >
       About Me
     </h2>
     <p
@@ -20,7 +23,26 @@
 </template>
 
 <script>
-export default {};
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+export default {
+  mounted: function () {
+    gsap.to(".about-text", {
+      scrollTrigger: {
+        trigger: ".about-text",
+        start: "top 700px",
+        end: "top 100px",
+        scrub: 2,
+        // markers: true,
+      },
+      x: -100,
+      ease: "none",
+      duration: 2,
+    });
+  },
+};
 </script>
 
 <style>

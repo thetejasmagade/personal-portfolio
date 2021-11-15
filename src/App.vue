@@ -7,7 +7,8 @@
     <Navbar id="home" />
     <Hero id="hero" />
     <About id="about" />
-    <FavouriteProjects />
+    <FavouriteProjects id="favouriteprojects" />
+    <LightBulb />
     <a href="#home">
       <ScrollToTop />
     </a>
@@ -21,6 +22,7 @@ import Hero from "@/components/Hero.vue";
 import About from "@/components/About.vue";
 import ScrollToTop from "./components/ScrollToTop.vue";
 import FavouriteProjects from "./components/FavouriteProjects.vue";
+import LightBulb from "./components/LightBulb.vue";
 
 export default {
   methods: {},
@@ -30,6 +32,7 @@ export default {
     About,
     ScrollToTop,
     FavouriteProjects,
+    LightBulb,
   },
 };
 </script>
