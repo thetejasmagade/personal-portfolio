@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=PT+Sans:ital@1&family=Pacifico&display=swap");
+
 /* color: #42b983; */
 
 body::-webkit-scrollbar {
@@ -26,6 +27,100 @@ body {
   }
   #hidden-desktop {
     display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .is-hidden-mobile {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .is-hidden-tablet {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .is-hidden-tablet-only {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .is-hidden-touch {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .is-hidden-desktop {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .is-hidden-desktop-only {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .is-hidden-widescreen {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+  .is-hidden-widescreen-only {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1408px) {
+  .is-hidden-fullhd {
+    display: none !important;
+  }
+}
+.is-invisible {
+  visibility: hidden !important;
+}
+@media screen and (max-width: 768px) {
+  .is-invisible-mobile {
+    visibility: hidden !important;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .is-invisible-tablet {
+    visibility: hidden !important;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .is-invisible-tablet-only {
+    visibility: hidden !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .is-invisible-touch {
+    visibility: hidden !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .is-invisible-desktop {
+    visibility: hidden !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .is-invisible-desktop-only {
+    visibility: hidden !important;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .is-invisible-widescreen {
+    visibility: hidden !important;
+  }
+}
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+  .is-invisible-widescreen-only {
+    visibility: hidden !important;
+  }
+}
+@media screen and (min-width: 1408px) {
+  .is-invisible-fullhd {
+    visibility: hidden !important;
   }
 }
 

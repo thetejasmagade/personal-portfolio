@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-28 py-28 bg-gray-200" id="hidden-mobile">
+  <div class="container px-28 py-28 bg-gray-200 is-hidden-mobile">
     <h2 class="text-7xl pb-2" style="font-family: 'Inter', sans-serif">
       About Me
     </h2>

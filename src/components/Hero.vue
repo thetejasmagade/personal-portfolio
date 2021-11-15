@@ -1,5 +1,5 @@
 <template>
-  <div id="hidden-mobile">
+  <div class="is-hidden-mobile">
     <Particles
       id="tsparticles"
       :particlesInit="particlesInit"
@@ -684,4 +684,19 @@ export default {
 </script>
 
 <style>
+#hidden-mobile {
+  display: block;
+}
+#hidden-desktop {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #hidden-mobile {
+    display: none;
+  }
+  #hidden-desktop {
+    display: block;
+  }
+}
 </style>

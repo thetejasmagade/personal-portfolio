@@ -1,5 +1,5 @@
 <template>
-  <div id="hidden-mobile">
+  <div class="is-hidden-mobile">
     <button
       class="
         bg-red-300
