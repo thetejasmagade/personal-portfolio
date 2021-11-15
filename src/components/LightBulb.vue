@@ -1,6 +1,6 @@
 <template>
   <div class="container px-28 py-10 bg-gray-200 is-hidden-mobile">
-    <img src="@/assets/images/lightbulb-on.png" id="bulb" />
+    <img src="@/assets/images/lightbulb-off.png" id="bulb" class="pr-10" />
     <p class="pt-5">
       <button
         class="
@@ -61,7 +61,7 @@ export default {
 
 <style>
 #bulb {
-  height: 250px;
-  width: 250px;
+  height: 350px;
+  width: 350px;
 }
 </style>
