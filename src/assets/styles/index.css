@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=PT+Sans:ital@1&family=Pacifico&display=swap");
+/* color: #42b983; */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#hidden-mobile {
+  display: block;
+}
+#hidden-desktop {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #hidden-mobile {
+    display: none;
+  }
+  #hidden-desktop {
+    display: block;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
