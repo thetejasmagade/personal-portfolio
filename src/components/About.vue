@@ -1,10 +1,10 @@
 <template>
   <div class="container px-28 py-28 bg-gray-200 is-hidden-mobile">
     <h2
-      class="text-7xl pb-2 about-text"
+      class="text-7xl pb-2 about-text text-gray-900"
       style="font-family: 'Inter', sans-serif"
     >
-      About Me
+      About Me 🧍‍♂️
     </h2>
     <p
       class="text-3xl text-gray-900 text-center"

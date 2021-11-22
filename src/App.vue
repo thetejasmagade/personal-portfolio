@@ -8,7 +8,8 @@
     <Hero id="hero" />
     <About id="about" />
     <FavouriteProjects id="favouriteprojects" />
-    <LightBulb />
+    <Projects id="projects" />
+    <LatestCode id="latestcode" />
     <a href="#home">
       <ScrollToTop />
     </a>
@@ -22,7 +23,8 @@ import Hero from "@/components/Hero.vue";
 import About from "@/components/About.vue";
 import ScrollToTop from "./components/ScrollToTop.vue";
 import FavouriteProjects from "./components/FavouriteProjects.vue";
-import LightBulb from "./components/LightBulb.vue";
+import Projects from "./components/Projects.vue";
+import LatestCode from "./components/LatestCode.vue";
 
 export default {
   methods: {},
@@ -32,7 +34,8 @@ export default {
     About,
     ScrollToTop,
     FavouriteProjects,
-    LightBulb,
+    Projects,
+    LatestCode,
   },
 };
 </script>

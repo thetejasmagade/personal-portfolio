@@ -9,11 +9,13 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.4.2",
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
     "gsap": "^3.8.0",
     "particles.vue3": "^1.20.3",
     "register-service-worker": "^1.7.1",
     "vue": "^3.0.0",
+    "vue-axios": "^3.4.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },

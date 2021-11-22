@@ -73,10 +73,19 @@
               >Favourite Projects</a
             >
             <a
-              href="#"
-              @click="whichPage('Work')"
-              :class="{ active: isWorkActive, inactive: !isWorkActive }"
-              >Work</a
+              href="#projects"
+              @click="whichPage('Projects')"
+              :class="{ active: isProjectsActive, inactive: !isProjectsActive }"
+              >Projects</a
+            >
+            <a
+              href="#latestcode"
+              @click="whichPage('LatestCode')"
+              :class="{
+                active: isLatestCodeActive,
+                inactive: !isLatestCodeActive,
+              }"
+              >Latest Code</a
             >
             <a
               href="#"
@@ -105,12 +114,13 @@ export default {
       isHomeActive: true,
       isAboutActive: false,
       isFavouriteProjectsActive: false,
-      isWorkActive: false,
+      isProjectsActive: false,
+      isLatestCodeActive: false,
       isBlogActive: false,
       isContactActive: false,
 
       activePageStyle: `text-white
-                px-4
+                px-2
                 py-2
                 rounded-md
                 text-sm
@@ -121,7 +131,7 @@ export default {
                 hover:from-pink-500 hover:to-yellow-500`,
       inActivePageStyle: `text-gray-300
                 hover:bg-gray-700 hover:text-white
-                px-4
+                px-2
                 py-2
                 rounded-md
                 text-sm
@@ -134,42 +144,56 @@ export default {
         this.isHomeActive = true;
         this.isAboutActive = false;
         this.isFavouriteProjectsActive = false;
-        this.isWorkActive = false;
+        this.isProjectsActive = false;
+        this.isLatestCodeActive = false;
         this.isBlogActive = false;
         this.isContactActive = false;
       } else if (data == "About") {
         this.isHomeActive = false;
         this.isAboutActive = true;
         this.isFavouriteProjectsActive = false;
-        this.isWorkActive = false;
+        this.isProjectsActive = false;
+        this.isLatestCodeActive = false;
         this.isBlogActive = false;
         this.isContactActive = false;
       } else if (data == "FavouriteProjects") {
         this.isHomeActive = false;
         this.isAboutActive = false;
         this.isFavouriteProjectsActive = true;
-        this.isWorkActive = false;
+        this.isProjectsActive = false;
+        this.isLatestCodeActive = false;
         this.isBlogActive = false;
         this.isContactActive = false;
-      } else if (data == "Work") {
+      } else if (data == "Projects") {
         this.isHomeActive = false;
         this.isAboutActive = false;
         this.isFavouriteProjectsActive = false;
-        this.isWorkActive = true;
+        this.isProjectsActive = true;
+        this.isLatestCodeActive = false;
+        this.isBlogActive = false;
+        this.isContactActive = false;
+      } else if (data == "LatestCode") {
+        this.isHomeActive = false;
+        this.isAboutActive = false;
+        this.isFavouriteProjectsActive = false;
+        this.isProjectsActive = false;
+        this.isLatestCodeActive = true;
         this.isBlogActive = false;
         this.isContactActive = false;
       } else if (data == "Blog") {
         this.isHomeActive = false;
         this.isAboutActive = false;
         this.isFavouriteProjectsActive = false;
-        this.isWorkActive = false;
+        this.isProjectsActive = false;
+        this.isLatestCodeActive = false;
         this.isBlogActive = true;
         this.isContactActive = false;
       } else if (data == "Contact") {
         this.isHomeActive = false;
         this.isAboutActive = false;
         this.isFavouriteProjectsActive = false;
-        this.isWorkActive = false;
+        this.isProjectsActive = false;
+        this.isLatestCodeActive = false;
         this.isBlogActive = false;
         this.isContactActive = true;
       }
